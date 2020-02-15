@@ -13,7 +13,7 @@ enum Environment: String {
     case sit = "SIT"
     case uat = "UAT"
     case production = "PRODUCTION"
-    
+
     var environmentDescription: String {
         switch self {
         case .dev:

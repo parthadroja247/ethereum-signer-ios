@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E9A8D8C4EC210309303C29F /* Pods_ethereum_signerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE06FC5F0350A7DBE75909C /* Pods_ethereum_signerTests.framework */; };
+		3F8363C244856E4F11D36147 /* Pods_ethereum_signer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */; };
+		A30499087B91B1274756E7EB /* Pods_ethereum_signer_ethereum_signerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554FF72705B8E9BB1A109FEF /* Pods_ethereum_signer_ethereum_signerUITests.framework */; };
 		D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */; };
 		D5021F2323F7FE7900DB2C4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */; };
 		D5021F2523F7FE7900DB2C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2423F7FE7900DB2C4B /* ViewController.swift */; };
 		D5021F2823F7FE7900DB2C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2623F7FE7900DB2C4B /* Main.storyboard */; };
 		D5021F2A23F7FE7A00DB2C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2923F7FE7A00DB2C4B /* Assets.xcassets */; };
 		D5021F2D23F7FE7A00DB2C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2B23F7FE7A00DB2C4B /* LaunchScreen.storyboard */; };
-		D5021F3823F7FE7A00DB2C4B /* ethereum_signerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F3723F7FE7A00DB2C4B /* ethereum_signerTests.swift */; };
-		D5021F4323F7FE7A00DB2C4B /* ethereum_signerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F4223F7FE7A00DB2C4B /* ethereum_signerUITests.swift */; };
+		D5021F3823F7FE7A00DB2C4B /* EthereumSignerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F3723F7FE7A00DB2C4B /* EthereumSignerTests.swift */; };
+		D5021F4323F7FE7A00DB2C4B /* EthereumSignerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F4223F7FE7A00DB2C4B /* EthereumSignerUITests.swift */; };
 		D5021F5723F803ED00DB2C4B /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F5623F803ED00DB2C4B /* EnvironmentConfiguration.swift */; };
 		D5021F5923F806A200DB2C4B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F5823F806A200DB2C4B /* Environment.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22D874946C1F52C3644C4E06 /* Pods-ethereum-signer.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.uat.xcconfig"; sourceTree = "<group>"; };
+		24B9BBA73F118E4DA91BA580 /* Pods-ethereum-signer.sit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.sit.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.sit.xcconfig"; sourceTree = "<group>"; };
+		30B6073D35840E9BCC8FE650 /* Pods-ethereum-signer.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.production.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.production.xcconfig"; sourceTree = "<group>"; };
+		554FF72705B8E9BB1A109FEF /* Pods_ethereum_signer_ethereum_signerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signer_ethereum_signerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F0A25C0BFC77003FCEE308 /* Pods-ethereum-signerTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.dev.xcconfig"; sourceTree = "<group>"; };
+		732DB71BC4A471AB4A69F76B /* Pods-ethereum-signer-ethereum-signerUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer-ethereum-signerUITests.production.xcconfig"; path = "Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests.production.xcconfig"; sourceTree = "<group>"; };
+		7AE06FC5F0350A7DBE75909C /* Pods_ethereum_signerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43203995A22B8AE9BDA0DC2 /* Pods-ethereum-signer-ethereum-signerUITests.sit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer-ethereum-signerUITests.sit.xcconfig"; path = "Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests.sit.xcconfig"; sourceTree = "<group>"; };
+		BA29F970BBBDBCB934DD82F0 /* Pods-ethereum-signer-ethereum-signerUITests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer-ethereum-signerUITests.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests.dev.xcconfig"; sourceTree = "<group>"; };
+		BFB8A36FBF72AF3ED0528386 /* Pods-ethereum-signerTests.sit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.sit.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.sit.xcconfig"; sourceTree = "<group>"; };
+		C41CC63A651FADEFF1AA72FF /* Pods-ethereum-signer-ethereum-signerUITests.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer-ethereum-signerUITests.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests.uat.xcconfig"; sourceTree = "<group>"; };
 		D5021F1D23F7FE7900DB2C4B /* ethereum-signer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ethereum-signer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,13 +60,17 @@
 		D5021F2C23F7FE7A00DB2C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5021F2E23F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5021F3323F7FE7A00DB2C4B /* ethereum-signerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ethereum-signerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5021F3723F7FE7A00DB2C4B /* ethereum_signerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ethereum_signerTests.swift; sourceTree = "<group>"; };
+		D5021F3723F7FE7A00DB2C4B /* EthereumSignerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumSignerTests.swift; sourceTree = "<group>"; };
 		D5021F3923F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5021F3E23F7FE7A00DB2C4B /* ethereum-signerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ethereum-signerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5021F4223F7FE7A00DB2C4B /* ethereum_signerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ethereum_signerUITests.swift; sourceTree = "<group>"; };
+		D5021F4223F7FE7A00DB2C4B /* EthereumSignerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumSignerUITests.swift; sourceTree = "<group>"; };
 		D5021F4423F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5021F5623F803ED00DB2C4B /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
 		D5021F5823F806A200DB2C4B /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0985B6DAA1DDE8B0FB4C7D9 /* Pods-ethereum-signerTests.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.uat.xcconfig"; sourceTree = "<group>"; };
+		EDAEE05F0BAA3728D4B56366 /* Pods-ethereum-signer.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.dev.xcconfig"; sourceTree = "<group>"; };
+		F7DA8DFF33C484FE1F619720 /* Pods-ethereum-signerTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.production.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8363C244856E4F11D36147 /* Pods_ethereum_signer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9A8D8C4EC210309303C29F /* Pods_ethereum_signerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +94,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A30499087B91B1274756E7EB /* Pods_ethereum_signer_ethereum_signerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276FE52120D855A5D920FE36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */,
+				554FF72705B8E9BB1A109FEF /* Pods_ethereum_signer_ethereum_signerUITests.framework */,
+				7AE06FC5F0350A7DBE75909C /* Pods_ethereum_signerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		738B319C34AE0DFBF191EE69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEE05F0BAA3728D4B56366 /* Pods-ethereum-signer.dev.xcconfig */,
+				22D874946C1F52C3644C4E06 /* Pods-ethereum-signer.uat.xcconfig */,
+				24B9BBA73F118E4DA91BA580 /* Pods-ethereum-signer.sit.xcconfig */,
+				30B6073D35840E9BCC8FE650 /* Pods-ethereum-signer.production.xcconfig */,
+				BA29F970BBBDBCB934DD82F0 /* Pods-ethereum-signer-ethereum-signerUITests.dev.xcconfig */,
+				C41CC63A651FADEFF1AA72FF /* Pods-ethereum-signer-ethereum-signerUITests.uat.xcconfig */,
+				A43203995A22B8AE9BDA0DC2 /* Pods-ethereum-signer-ethereum-signerUITests.sit.xcconfig */,
+				732DB71BC4A471AB4A69F76B /* Pods-ethereum-signer-ethereum-signerUITests.production.xcconfig */,
+				72F0A25C0BFC77003FCEE308 /* Pods-ethereum-signerTests.dev.xcconfig */,
+				E0985B6DAA1DDE8B0FB4C7D9 /* Pods-ethereum-signerTests.uat.xcconfig */,
+				BFB8A36FBF72AF3ED0528386 /* Pods-ethereum-signerTests.sit.xcconfig */,
+				F7DA8DFF33C484FE1F619720 /* Pods-ethereum-signerTests.production.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D5021F1423F7FE7900DB2C4B = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +137,8 @@
 				D5021F3623F7FE7A00DB2C4B /* ethereum-signerTests */,
 				D5021F4123F7FE7A00DB2C4B /* ethereum-signerUITests */,
 				D5021F1E23F7FE7900DB2C4B /* Products */,
+				738B319C34AE0DFBF191EE69 /* Pods */,
+				276FE52120D855A5D920FE36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +165,7 @@
 		D5021F3623F7FE7A00DB2C4B /* ethereum-signerTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5021F3723F7FE7A00DB2C4B /* ethereum_signerTests.swift */,
+				D5021F3723F7FE7A00DB2C4B /* EthereumSignerTests.swift */,
 				D5021F3923F7FE7A00DB2C4B /* Info.plist */,
 			);
 			path = "ethereum-signerTests";
@@ -122,7 +174,7 @@
 		D5021F4123F7FE7A00DB2C4B /* ethereum-signerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D5021F4223F7FE7A00DB2C4B /* ethereum_signerUITests.swift */,
+				D5021F4223F7FE7A00DB2C4B /* EthereumSignerUITests.swift */,
 				D5021F4423F7FE7A00DB2C4B /* Info.plist */,
 			);
 			path = "ethereum-signerUITests";
@@ -181,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5021F4723F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signer" */;
 			buildPhases = (
+				6A267B8DBC3DA558D184B2A4 /* [CP] Check Pods Manifest.lock */,
 				D5021F1923F7FE7900DB2C4B /* Sources */,
 				D5021F1A23F7FE7900DB2C4B /* Frameworks */,
 				D5021F1B23F7FE7900DB2C4B /* Resources */,
+				D5021F6223F82FB100DB2C4B /* Swift Lint Run Script */,
 			);
 			buildRules = (
 			);
@@ -198,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5021F4A23F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signerTests" */;
 			buildPhases = (
+				AF1A442F76381394DEE522DE /* [CP] Check Pods Manifest.lock */,
 				D5021F2F23F7FE7A00DB2C4B /* Sources */,
 				D5021F3023F7FE7A00DB2C4B /* Frameworks */,
 				D5021F3123F7FE7A00DB2C4B /* Resources */,
@@ -216,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5021F4D23F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signerUITests" */;
 			buildPhases = (
+				4C1045E6D6AD49A673488D48 /* [CP] Check Pods Manifest.lock */,
 				D5021F3A23F7FE7A00DB2C4B /* Sources */,
 				D5021F3B23F7FE7A00DB2C4B /* Frameworks */,
 				D5021F3C23F7FE7A00DB2C4B /* Resources */,
@@ -300,6 +356,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C1045E6D6AD49A673488D48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ethereum-signer-ethereum-signerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A267B8DBC3DA558D184B2A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ethereum-signer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF1A442F76381394DEE522DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ethereum-signerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5021F6223F82FB100DB2C4B /* Swift Lint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5021F1923F7FE7900DB2C4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -317,7 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5021F3823F7FE7A00DB2C4B /* ethereum_signerTests.swift in Sources */,
+				D5021F3823F7FE7A00DB2C4B /* EthereumSignerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5021F4323F7FE7A00DB2C4B /* ethereum_signerUITests.swift in Sources */,
+				D5021F4323F7FE7A00DB2C4B /* EthereumSignerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +623,7 @@
 		};
 		D5021F4823F7FE7A00DB2C4B /* DEV */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDAEE05F0BAA3728D4B56366 /* Pods-ethereum-signer.dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(ENVIRONMENT_IDENTIFIER)";
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +643,7 @@
 		};
 		D5021F4923F7FE7A00DB2C4B /* PRODUCTION */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B6073D35840E9BCC8FE650 /* Pods-ethereum-signer.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(ENVIRONMENT_IDENTIFIER)";
 				CODE_SIGN_STYLE = Automatic;
@@ -518,6 +663,7 @@
 		};
 		D5021F4B23F7FE7A00DB2C4B /* DEV */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F0A25C0BFC77003FCEE308 /* Pods-ethereum-signerTests.dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +686,7 @@
 		};
 		D5021F4C23F7FE7A00DB2C4B /* PRODUCTION */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DA8DFF33C484FE1F619720 /* Pods-ethereum-signerTests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +709,7 @@
 		};
 		D5021F4E23F7FE7A00DB2C4B /* DEV */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA29F970BBBDBCB934DD82F0 /* Pods-ethereum-signer-ethereum-signerUITests.dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -582,6 +730,7 @@
 		};
 		D5021F4F23F7FE7A00DB2C4B /* PRODUCTION */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732DB71BC4A471AB4A69F76B /* Pods-ethereum-signer-ethereum-signerUITests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -662,6 +811,7 @@
 		};
 		D5021F5B23F8074200DB2C4B /* SIT */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B9BBA73F118E4DA91BA580 /* Pods-ethereum-signer.sit.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(ENVIRONMENT_IDENTIFIER)";
 				CODE_SIGN_STYLE = Automatic;
@@ -681,6 +831,7 @@
 		};
 		D5021F5C23F8074200DB2C4B /* SIT */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB8A36FBF72AF3ED0528386 /* Pods-ethereum-signerTests.sit.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -703,6 +854,7 @@
 		};
 		D5021F5D23F8074200DB2C4B /* SIT */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A43203995A22B8AE9BDA0DC2 /* Pods-ethereum-signer-ethereum-signerUITests.sit.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -783,6 +935,7 @@
 		};
 		D5021F5F23F8078000DB2C4B /* UAT */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D874946C1F52C3644C4E06 /* Pods-ethereum-signer.uat.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(ENVIRONMENT_IDENTIFIER)";
 				CODE_SIGN_STYLE = Automatic;
@@ -802,6 +955,7 @@
 		};
 		D5021F6023F8078000DB2C4B /* UAT */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0985B6DAA1DDE8B0FB4C7D9 /* Pods-ethereum-signerTests.uat.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -824,6 +978,7 @@
 		};
 		D5021F6123F8078000DB2C4B /* UAT */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41CC63A651FADEFF1AA72FF /* Pods-ethereum-signer-ethereum-signerUITests.uat.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
