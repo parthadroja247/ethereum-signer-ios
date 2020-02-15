@@ -99,13 +99,9 @@
 		D5021F1F23F7FE7900DB2C4B /* ethereum-signer */ = {
 			isa = PBXGroup;
 			children = (
-				D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */,
-				D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */,
-				D5021F2423F7FE7900DB2C4B /* ViewController.swift */,
-				D5021F2623F7FE7900DB2C4B /* Main.storyboard */,
-				D5021F2923F7FE7A00DB2C4B /* Assets.xcassets */,
-				D5021F2B23F7FE7A00DB2C4B /* LaunchScreen.storyboard */,
-				D5021F2E23F7FE7A00DB2C4B /* Info.plist */,
+				D5021F5223F7FFF500DB2C4B /* Sources */,
+				D5021F5123F7FFD500DB2C4B /* Resources */,
+				D5021F5023F7FFCA00DB2C4B /* Supporting Files */,
 			);
 			path = "ethereum-signer";
 			sourceTree = "<group>";
@@ -126,6 +122,50 @@
 				D5021F4423F7FE7A00DB2C4B /* Info.plist */,
 			);
 			path = "ethereum-signerUITests";
+			sourceTree = "<group>";
+		};
+		D5021F5023F7FFCA00DB2C4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */,
+				D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */,
+				D5021F2E23F7FE7A00DB2C4B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5021F5123F7FFD500DB2C4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F2923F7FE7A00DB2C4B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5021F5223F7FFF500DB2C4B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F5523F800B800DB2C4B /* ViewControllers */,
+				D5021F5423F800A600DB2C4B /* Storyboards */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D5021F5423F800A600DB2C4B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F2623F7FE7900DB2C4B /* Main.storyboard */,
+				D5021F2B23F7FE7A00DB2C4B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D5021F5523F800B800DB2C4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F2423F7FE7900DB2C4B /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9MXB9EHJSS;
-				INFOPLIST_FILE = "ethereum-signer/Info.plist";
+				INFOPLIST_FILE = "ethereum-signer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9MXB9EHJSS;
-				INFOPLIST_FILE = "ethereum-signer/Info.plist";
+				INFOPLIST_FILE = "ethereum-signer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
