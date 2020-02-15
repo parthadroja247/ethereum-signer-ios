@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */; };
+		D5021F2323F7FE7900DB2C4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */; };
+		D5021F2523F7FE7900DB2C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2423F7FE7900DB2C4B /* ViewController.swift */; };
+		D5021F2823F7FE7900DB2C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2623F7FE7900DB2C4B /* Main.storyboard */; };
+		D5021F2A23F7FE7A00DB2C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2923F7FE7A00DB2C4B /* Assets.xcassets */; };
+		D5021F2D23F7FE7A00DB2C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2B23F7FE7A00DB2C4B /* LaunchScreen.storyboard */; };
+		D5021F3823F7FE7A00DB2C4B /* ethereum_signerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F3723F7FE7A00DB2C4B /* ethereum_signerTests.swift */; };
+		D5021F4323F7FE7A00DB2C4B /* ethereum_signerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F4223F7FE7A00DB2C4B /* ethereum_signerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5021F3423F7FE7A00DB2C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5021F1523F7FE7900DB2C4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5021F1C23F7FE7900DB2C4B;
+			remoteInfo = "ethereum-signer";
+		};
+		D5021F3F23F7FE7A00DB2C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5021F1523F7FE7900DB2C4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5021F1C23F7FE7900DB2C4B;
+			remoteInfo = "ethereum-signer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5021F1D23F7FE7900DB2C4B /* ethereum-signer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ethereum-signer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D5021F2423F7FE7900DB2C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5021F2723F7FE7900DB2C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5021F2923F7FE7A00DB2C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5021F2C23F7FE7A00DB2C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5021F2E23F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5021F3323F7FE7A00DB2C4B /* ethereum-signerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ethereum-signerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5021F3723F7FE7A00DB2C4B /* ethereum_signerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ethereum_signerTests.swift; sourceTree = "<group>"; };
+		D5021F3923F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5021F3E23F7FE7A00DB2C4B /* ethereum-signerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ethereum-signerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5021F4223F7FE7A00DB2C4B /* ethereum_signerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ethereum_signerUITests.swift; sourceTree = "<group>"; };
+		D5021F4423F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5021F1A23F7FE7900DB2C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5021F3023F7FE7A00DB2C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5021F3B23F7FE7A00DB2C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5021F1423F7FE7900DB2C4B = {
+			isa = PBXGroup;
+			children = (
+				D5021F1F23F7FE7900DB2C4B /* ethereum-signer */,
+				D5021F3623F7FE7A00DB2C4B /* ethereum-signerTests */,
+				D5021F4123F7FE7A00DB2C4B /* ethereum-signerUITests */,
+				D5021F1E23F7FE7900DB2C4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5021F1E23F7FE7900DB2C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F1D23F7FE7900DB2C4B /* ethereum-signer.app */,
+				D5021F3323F7FE7A00DB2C4B /* ethereum-signerTests.xctest */,
+				D5021F3E23F7FE7A00DB2C4B /* ethereum-signerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5021F1F23F7FE7900DB2C4B /* ethereum-signer */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */,
+				D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */,
+				D5021F2423F7FE7900DB2C4B /* ViewController.swift */,
+				D5021F2623F7FE7900DB2C4B /* Main.storyboard */,
+				D5021F2923F7FE7A00DB2C4B /* Assets.xcassets */,
+				D5021F2B23F7FE7A00DB2C4B /* LaunchScreen.storyboard */,
+				D5021F2E23F7FE7A00DB2C4B /* Info.plist */,
+			);
+			path = "ethereum-signer";
+			sourceTree = "<group>";
+		};
+		D5021F3623F7FE7A00DB2C4B /* ethereum-signerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F3723F7FE7A00DB2C4B /* ethereum_signerTests.swift */,
+				D5021F3923F7FE7A00DB2C4B /* Info.plist */,
+			);
+			path = "ethereum-signerTests";
+			sourceTree = "<group>";
+		};
+		D5021F4123F7FE7A00DB2C4B /* ethereum-signerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F4223F7FE7A00DB2C4B /* ethereum_signerUITests.swift */,
+				D5021F4423F7FE7A00DB2C4B /* Info.plist */,
+			);
+			path = "ethereum-signerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5021F1C23F7FE7900DB2C4B /* ethereum-signer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5021F4723F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signer" */;
+			buildPhases = (
+				D5021F1923F7FE7900DB2C4B /* Sources */,
+				D5021F1A23F7FE7900DB2C4B /* Frameworks */,
+				D5021F1B23F7FE7900DB2C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ethereum-signer";
+			productName = "ethereum-signer";
+			productReference = D5021F1D23F7FE7900DB2C4B /* ethereum-signer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5021F3223F7FE7A00DB2C4B /* ethereum-signerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5021F4A23F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signerTests" */;
+			buildPhases = (
+				D5021F2F23F7FE7A00DB2C4B /* Sources */,
+				D5021F3023F7FE7A00DB2C4B /* Frameworks */,
+				D5021F3123F7FE7A00DB2C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5021F3523F7FE7A00DB2C4B /* PBXTargetDependency */,
+			);
+			name = "ethereum-signerTests";
+			productName = "ethereum-signerTests";
+			productReference = D5021F3323F7FE7A00DB2C4B /* ethereum-signerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5021F3D23F7FE7A00DB2C4B /* ethereum-signerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5021F4D23F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signerUITests" */;
+			buildPhases = (
+				D5021F3A23F7FE7A00DB2C4B /* Sources */,
+				D5021F3B23F7FE7A00DB2C4B /* Frameworks */,
+				D5021F3C23F7FE7A00DB2C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5021F4023F7FE7A00DB2C4B /* PBXTargetDependency */,
+			);
+			name = "ethereum-signerUITests";
+			productName = "ethereum-signerUITests";
+			productReference = D5021F3E23F7FE7A00DB2C4B /* ethereum-signerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5021F1523F7FE7900DB2C4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Parth Adroja";
+				TargetAttributes = {
+					D5021F1C23F7FE7900DB2C4B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D5021F3223F7FE7A00DB2C4B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D5021F1C23F7FE7900DB2C4B;
+					};
+					D5021F3D23F7FE7A00DB2C4B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D5021F1C23F7FE7900DB2C4B;
+					};
+				};
+			};
+			buildConfigurationList = D5021F1823F7FE7900DB2C4B /* Build configuration list for PBXProject "ethereum-signer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5021F1423F7FE7900DB2C4B;
+			productRefGroup = D5021F1E23F7FE7900DB2C4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5021F1C23F7FE7900DB2C4B /* ethereum-signer */,
+				D5021F3223F7FE7A00DB2C4B /* ethereum-signerTests */,
+				D5021F3D23F7FE7A00DB2C4B /* ethereum-signerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5021F1B23F7FE7900DB2C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5021F2D23F7FE7A00DB2C4B /* LaunchScreen.storyboard in Resources */,
+				D5021F2A23F7FE7A00DB2C4B /* Assets.xcassets in Resources */,
+				D5021F2823F7FE7900DB2C4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5021F3123F7FE7A00DB2C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5021F3C23F7FE7A00DB2C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5021F1923F7FE7900DB2C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5021F2523F7FE7900DB2C4B /* ViewController.swift in Sources */,
+				D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */,
+				D5021F2323F7FE7900DB2C4B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5021F2F23F7FE7A00DB2C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5021F3823F7FE7A00DB2C4B /* ethereum_signerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5021F3A23F7FE7A00DB2C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5021F4323F7FE7A00DB2C4B /* ethereum_signerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5021F3523F7FE7A00DB2C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5021F1C23F7FE7900DB2C4B /* ethereum-signer */;
+			targetProxy = D5021F3423F7FE7A00DB2C4B /* PBXContainerItemProxy */;
+		};
+		D5021F4023F7FE7A00DB2C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5021F1C23F7FE7900DB2C4B /* ethereum-signer */;
+			targetProxy = D5021F3F23F7FE7A00DB2C4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5021F2623F7FE7900DB2C4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5021F2723F7FE7900DB2C4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5021F2B23F7FE7A00DB2C4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5021F2C23F7FE7A00DB2C4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5021F4523F7FE7A00DB2C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5021F4623F7FE7A00DB2C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5021F4823F7FE7A00DB2C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MXB9EHJSS;
+				INFOPLIST_FILE = "ethereum-signer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parthadroja.ethereum-signer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5021F4923F7FE7A00DB2C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MXB9EHJSS;
+				INFOPLIST_FILE = "ethereum-signer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parthadroja.ethereum-signer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5021F4B23F7FE7A00DB2C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MXB9EHJSS;
+				INFOPLIST_FILE = "ethereum-signerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parthadroja.ethereum-signerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ethereum-signer.app/ethereum-signer";
+			};
+			name = Debug;
+		};
+		D5021F4C23F7FE7A00DB2C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MXB9EHJSS;
+				INFOPLIST_FILE = "ethereum-signerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parthadroja.ethereum-signerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ethereum-signer.app/ethereum-signer";
+			};
+			name = Release;
+		};
+		D5021F4E23F7FE7A00DB2C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MXB9EHJSS;
+				INFOPLIST_FILE = "ethereum-signerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parthadroja.ethereum-signerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ethereum-signer";
+			};
+			name = Debug;
+		};
+		D5021F4F23F7FE7A00DB2C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MXB9EHJSS;
+				INFOPLIST_FILE = "ethereum-signerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parthadroja.ethereum-signerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ethereum-signer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5021F1823F7FE7900DB2C4B /* Build configuration list for PBXProject "ethereum-signer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5021F4523F7FE7A00DB2C4B /* Debug */,
+				D5021F4623F7FE7A00DB2C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5021F4723F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5021F4823F7FE7A00DB2C4B /* Debug */,
+				D5021F4923F7FE7A00DB2C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5021F4A23F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5021F4B23F7FE7A00DB2C4B /* Debug */,
+				D5021F4C23F7FE7A00DB2C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5021F4D23F7FE7A00DB2C4B /* Build configuration list for PBXNativeTarget "ethereum-signerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5021F4E23F7FE7A00DB2C4B /* Debug */,
+				D5021F4F23F7FE7A00DB2C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5021F1523F7FE7900DB2C4B /* Project object */;
+}
