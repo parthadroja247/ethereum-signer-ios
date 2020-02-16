@@ -26,4 +26,13 @@ enum Environment: String {
             return "Production"
         }
     }
+
+    var rinkbyEndpoint: String {
+        switch self {
+        case .dev:
+            return "https://rinkeby.infura.io/v3/cccb358bdb104999807a2b5fae0716ee"
+        default:
+            return ""
+        }
+    }
 }

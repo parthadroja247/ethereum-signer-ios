@@ -12,14 +12,26 @@ import Web3
 class SetupViewController: UIViewController {
     @IBOutlet var privateKeyTextField: UITextField!
 
+    private var contract: SetupContract!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        privateKeyTextField.resignFirstResponder()
+    }
+
     private func configureView() {
+        configureContract()
         configureNavigationBar()
         configurePrivateKeyTextField()
+    }
+
+    private func configureContract() {
+        contract = SetupViewModel()
     }
 
     private func configureNavigationBar() {
@@ -32,11 +44,22 @@ class SetupViewController: UIViewController {
         privateKeyTextField.becomeFirstResponder()
         privateKeyTextField.backgroundColor = .systemGray6
         privateKeyTextField.delegate = self
+        privateKeyTextField.autocorrectionType = .no
     }
 
     private func privateKeyEntered(key: String) {
-        print("KEY == \(key)")
+        let result = contract.validatePrivateKey(key: key)
+        if result.0 != nil {
+            privateKeyValidated(key: result.0!)
+        }
     }
+
+    private func privateKeyValidated(key: EthereumPrivateKey) {
+        contract.configureEthereumClient(key: key)
+        navigateToAccounts()
+    }
+
+    private func navigateToAccounts() {}
 }
 
 extension SetupViewController: UITextFieldDelegate {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,9 @@
 		D525FF8523F94B9400A0470E /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8423F94B9300A0470E /* Storyboard.swift */; };
 		D525FF8723F94BCE00A0470E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8623F94BCE00A0470E /* UIViewController.swift */; };
 		D525FF8A23F9544800A0470E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8923F9544800A0470E /* Constants.swift */; };
+		D525FF8D23F95E0400A0470E /* EthereumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8C23F95E0400A0470E /* EthereumClient.swift */; };
+		D525FF9023F9655E00A0470E /* SetupContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8F23F9655E00A0470E /* SetupContract.swift */; };
+		D525FF9223F9665400A0470E /* SetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF9123F9665400A0470E /* SetupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		D525FF8423F94B9300A0470E /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		D525FF8623F94BCE00A0470E /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		D525FF8923F9544800A0470E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D525FF8C23F95E0400A0470E /* EthereumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumClient.swift; sourceTree = "<group>"; };
+		D525FF8F23F9655E00A0470E /* SetupContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupContract.swift; sourceTree = "<group>"; };
+		D525FF9123F9665400A0470E /* SetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewModel.swift; sourceTree = "<group>"; };
 		DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0985B6DAA1DDE8B0FB4C7D9 /* Pods-ethereum-signerTests.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.uat.xcconfig"; sourceTree = "<group>"; };
 		EDAEE05F0BAA3728D4B56366 /* Pods-ethereum-signer.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.dev.xcconfig"; sourceTree = "<group>"; };
@@ -212,8 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				D525FF8823F9541400A0470E /* Constants */,
+				D525FF8B23F95DE200A0470E /* Client */,
 				D525FF8223F94B4600A0470E /* Utils */,
-				D5021F5523F800B800DB2C4B /* ViewControllers */,
+				D5021F5523F800B800DB2C4B /* Views */,
 				D5021F5423F800A600DB2C4B /* Storyboards */,
 			);
 			path = Sources;
@@ -228,13 +235,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		D5021F5523F800B800DB2C4B /* ViewControllers */ = {
+		D5021F5523F800B800DB2C4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D5021F2423F7FE7900DB2C4B /* StartViewController.swift */,
-				D525FF8023F94A7600A0470E /* SetupViewController.swift */,
+				D525FF9323F967DC00A0470E /* Start */,
+				D525FF8E23F9653600A0470E /* Setup */,
 			);
-			path = ViewControllers;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D525FF8223F94B4600A0470E /* Utils */ = {
@@ -260,6 +267,32 @@
 				D525FF8923F9544800A0470E /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		D525FF8B23F95DE200A0470E /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				D525FF8C23F95E0400A0470E /* EthereumClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		D525FF8E23F9653600A0470E /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				D525FF8F23F9655E00A0470E /* SetupContract.swift */,
+				D525FF9123F9665400A0470E /* SetupViewModel.swift */,
+				D525FF8023F94A7600A0470E /* SetupViewController.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		D525FF9323F967DC00A0470E /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				D5021F2423F7FE7900DB2C4B /* StartViewController.swift */,
+			);
+			path = Start;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,12 +556,15 @@
 				D5021F2523F7FE7900DB2C4B /* StartViewController.swift in Sources */,
 				D525FF8A23F9544800A0470E /* Constants.swift in Sources */,
 				D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */,
+				D525FF8D23F95E0400A0470E /* EthereumClient.swift in Sources */,
+				D525FF9223F9665400A0470E /* SetupViewModel.swift in Sources */,
 				D5021F5723F803ED00DB2C4B /* EnvironmentConfiguration.swift in Sources */,
 				D525FF8523F94B9400A0470E /* Storyboard.swift in Sources */,
 				D5021F2323F7FE7900DB2C4B /* SceneDelegate.swift in Sources */,
 				D525FF8123F94A7600A0470E /* SetupViewController.swift in Sources */,
 				D525FF8723F94BCE00A0470E /* UIViewController.swift in Sources */,
 				D5021F5923F806A200DB2C4B /* Environment.swift in Sources */,
+				D525FF9023F9655E00A0470E /* SetupContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
