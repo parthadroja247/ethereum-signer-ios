@@ -35,6 +35,49 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="94.419642857142847"/>
         </scene>
+        <!--Setup View Controller-->
+        <scene sceneID="ME8-tP-LZR">
+            <objects>
+                <viewController storyboardIdentifier="SetupViewController" id="1s4-yc-4ey" customClass="SetupViewController" customModule="ethereum_signer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="46j-VW-EgM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPY-jW-WZF" userLabel="View-Content">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyd-1F-Lta">
+                                        <rect key="frame" x="24" y="32" width="366" height="34"/>
+                                        <nil key="textColor"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zyd-1F-Lta" secondAttribute="trailing" constant="24" id="2RV-yE-yv7"/>
+                                    <constraint firstItem="zyd-1F-Lta" firstAttribute="top" secondItem="HPY-jW-WZF" secondAttribute="top" constant="32" id="31f-JT-wC4"/>
+                                    <constraint firstItem="zyd-1F-Lta" firstAttribute="leading" secondItem="HPY-jW-WZF" secondAttribute="leading" constant="24" id="xCg-a3-wce"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HPY-jW-WZF" firstAttribute="leading" secondItem="Zzp-C7-OfZ" secondAttribute="leading" id="a0a-1n-DqI"/>
+                            <constraint firstItem="Zzp-C7-OfZ" firstAttribute="trailing" secondItem="HPY-jW-WZF" secondAttribute="trailing" id="cBR-js-rng"/>
+                            <constraint firstItem="HPY-jW-WZF" firstAttribute="top" secondItem="Zzp-C7-OfZ" secondAttribute="top" id="l8H-le-fzt"/>
+                            <constraint firstItem="Zzp-C7-OfZ" firstAttribute="bottom" secondItem="HPY-jW-WZF" secondAttribute="bottom" id="ygp-cR-xSJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zzp-C7-OfZ"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="privateKeyTextField" destination="zyd-1F-Lta" id="Ldy-W4-JSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gO-DG-I4v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913.0434782608697" y="93.75"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rOt-rh-LXE">
             <objects>

@@ -19,6 +19,7 @@ class StartViewController: UIViewController {
     }
 
     func navigateToSetup() {
-        // Go to new screen
+        let setupController = SetupViewController.instantiateFrom(storyboard: .main)
+        navigationController?.pushViewController(setupController, animated: true)
     }
 }
