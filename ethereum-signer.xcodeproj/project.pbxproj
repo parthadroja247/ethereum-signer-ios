@@ -274,6 +274,7 @@
 				D5021F1A23F7FE7900DB2C4B /* Frameworks */,
 				D5021F1B23F7FE7900DB2C4B /* Resources */,
 				D5021F6223F82FB100DB2C4B /* Swift Lint Run Script */,
+				E628AF53353982F9A2DBD09E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +312,7 @@
 				D5021F3A23F7FE7A00DB2C4B /* Sources */,
 				D5021F3B23F7FE7A00DB2C4B /* Frameworks */,
 				D5021F3C23F7FE7A00DB2C4B /* Resources */,
+				E5E511B76833DB16415B5C6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -476,6 +478,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		E5E511B76833DB16415B5C6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E628AF53353982F9A2DBD09E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

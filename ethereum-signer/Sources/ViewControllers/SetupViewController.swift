@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Web3
 
 class SetupViewController: UIViewController {
     @IBOutlet var privateKeyTextField: UITextField!
