@@ -16,5 +16,7 @@ struct Constants {
 
     struct Placeholder {
         static let privateKey = "Private Key"
+        static let address = "Address"
+        static let balance = "Balance"
     }
 }

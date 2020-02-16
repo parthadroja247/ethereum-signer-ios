@@ -13,8 +13,13 @@ struct AccountViewModel: AccountContract {
         return EthereumClient.shared.getAddress()
     }
 
-    func getAccountBalance() -> String {
-        EthereumClient.shared.fetchBalance()
-        return "BALANCE"
+    func getAccountBalance(completion: @escaping (Result<Double, Error>) -> Void) {
+        EthereumClient.shared.fetchBalance { result in
+            completion(result)
+        }
     }
+
+    func sign() {}
+
+    func verify() {}
 }

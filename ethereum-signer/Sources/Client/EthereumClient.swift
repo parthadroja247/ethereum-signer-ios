@@ -24,10 +24,22 @@ final class EthereumClient {
         return address
     }
 
-    func fetchBalance() {
+    func fetchBalance(completion: @escaping (Result<Double, Error>) -> Void) {
         web3.eth.getBalance(address: ethereumPrivateKey.address, block: .latest) { response in
             if let result = response.result {
-            } else {}
+                completion(.success(result.toDouble()))
+            } else if let error = response.error {
+                completion(.failure(error))
+            } else {
+                completion(.failure(EthereumError.generic))
+            }
         }
+    }
+}
+
+extension EthereumQuantity {
+    func toDouble() -> Double {
+        let doubleValue = Double(quantity) / pow(10, 18)
+        return doubleValue
     }
 }

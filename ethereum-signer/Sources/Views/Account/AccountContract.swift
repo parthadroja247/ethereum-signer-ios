@@ -10,5 +10,7 @@ import Foundation
 
 protocol AccountContract {
     func getAccountAddress() -> String
-    func getAccountBalance() -> String
+    func getAccountBalance(completion: @escaping (Result<Double, Error>) -> Void)
+    func sign()
+    func verify()
 }

@@ -9,22 +9,31 @@
 import UIKit
 
 class AccountViewController: UIViewController {
+    @IBOutlet var addressPlaceholderLabel: UILabel!
+    @IBOutlet var addressLabel: UILabel!
+    @IBOutlet var balancePlaceholderLabel: UILabel!
+    @IBOutlet var balanceLabel: UILabel!
+
+    @IBAction func signAction(_: UIButton) {
+        contract.sign()
+    }
+
+    @IBAction func verifyAction(_: UIButton) {
+        contract.verify()
+    }
+
     private var contract: AccountContract!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print(contract.getAccountAddress())
-        print(contract.getAccountBalance())
+        fetchBalance()
     }
 
     private func configureView() {
         configureContract()
         configureNavigationBar()
+        configureLabels()
     }
 
     private func configureContract() {
@@ -34,5 +43,30 @@ class AccountViewController: UIViewController {
     private func configureNavigationBar() {
         title = Constants.Title.account
         navigationItem.setHidesBackButton(true, animated: true)
+    }
+
+    private func configureLabels() {
+        addressPlaceholderLabel.text = Constants.Placeholder.address
+        balancePlaceholderLabel.text = Constants.Placeholder.balance
+        addressLabel.text = contract.getAccountAddress()
+        addressLabel.lineBreakMode = .byTruncatingMiddle
+    }
+
+    private func fetchBalance() {
+        contract.getAccountBalance { response in
+            switch response {
+            case let .success(balance):
+                self.updateUI(balance: balance)
+            case let .failure(error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+
+    private func updateUI(balance: Double) {
+        DispatchQueue.main.async {
+            let balanceString = "\(balance) Ether"
+            self.balanceLabel.text = balanceString
+        }
     }
 }
