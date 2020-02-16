@@ -11,6 +11,7 @@ import Foundation
 struct Constants {
     struct Title {
         static let setup = "Setup"
+        static let account = "Account"
     }
 
     struct Placeholder {

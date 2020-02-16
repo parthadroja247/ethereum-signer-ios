@@ -48,7 +48,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyd-1F-Lta">
                                         <rect key="frame" x="24" y="32" width="366" height="34"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -77,6 +77,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gO-DG-I4v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1913.0434782608697" y="93.75"/>
+        </scene>
+        <!--Account View Controller-->
+        <scene sceneID="I4R-H2-2An">
+            <objects>
+                <viewController storyboardIdentifier="AccountViewController" id="yP6-Vn-Srj" customClass="AccountViewController" customModule="ethereum_signer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C9B-9m-ZYN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PM6-x0-NxV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rir-JL-ucf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="830"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rOt-rh-LXE">

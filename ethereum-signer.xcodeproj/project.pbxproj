@@ -27,6 +27,9 @@
 		D525FF8D23F95E0400A0470E /* EthereumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8C23F95E0400A0470E /* EthereumClient.swift */; };
 		D525FF9023F9655E00A0470E /* SetupContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8F23F9655E00A0470E /* SetupContract.swift */; };
 		D525FF9223F9665400A0470E /* SetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF9123F9665400A0470E /* SetupViewModel.swift */; };
+		D55A5AD223F9797F00B34A2C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5AD123F9797F00B34A2C /* AccountViewController.swift */; };
+		D55A5AD423F979C500B34A2C /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5AD323F979C500B34A2C /* AccountViewModel.swift */; };
+		D55A5AD623F979D700B34A2C /* AccountContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5AD523F979D700B34A2C /* AccountContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		D525FF8C23F95E0400A0470E /* EthereumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumClient.swift; sourceTree = "<group>"; };
 		D525FF8F23F9655E00A0470E /* SetupContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupContract.swift; sourceTree = "<group>"; };
 		D525FF9123F9665400A0470E /* SetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewModel.swift; sourceTree = "<group>"; };
+		D55A5AD123F9797F00B34A2C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		D55A5AD323F979C500B34A2C /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		D55A5AD523F979D700B34A2C /* AccountContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountContract.swift; sourceTree = "<group>"; };
 		DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0985B6DAA1DDE8B0FB4C7D9 /* Pods-ethereum-signerTests.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.uat.xcconfig"; sourceTree = "<group>"; };
 		EDAEE05F0BAA3728D4B56366 /* Pods-ethereum-signer.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.dev.xcconfig"; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 			children = (
 				D525FF9323F967DC00A0470E /* Start */,
 				D525FF8E23F9653600A0470E /* Setup */,
+				D55A5AD023F9794E00B34A2C /* Account */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +300,16 @@
 				D5021F2423F7FE7900DB2C4B /* StartViewController.swift */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		D55A5AD023F9794E00B34A2C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D55A5AD523F979D700B34A2C /* AccountContract.swift */,
+				D55A5AD323F979C500B34A2C /* AccountViewModel.swift */,
+				D55A5AD123F9797F00B34A2C /* AccountViewController.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,11 +572,14 @@
 			files = (
 				D5021F2523F7FE7900DB2C4B /* StartViewController.swift in Sources */,
 				D525FF8A23F9544800A0470E /* Constants.swift in Sources */,
+				D55A5AD223F9797F00B34A2C /* AccountViewController.swift in Sources */,
 				D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */,
 				D525FF8D23F95E0400A0470E /* EthereumClient.swift in Sources */,
 				D525FF9223F9665400A0470E /* SetupViewModel.swift in Sources */,
 				D5021F5723F803ED00DB2C4B /* EnvironmentConfiguration.swift in Sources */,
 				D525FF8523F94B9400A0470E /* Storyboard.swift in Sources */,
+				D55A5AD623F979D700B34A2C /* AccountContract.swift in Sources */,
+				D55A5AD423F979C500B34A2C /* AccountViewModel.swift in Sources */,
 				D5021F2323F7FE7900DB2C4B /* SceneDelegate.swift in Sources */,
 				D525FF8123F94A7600A0470E /* SetupViewController.swift in Sources */,
 				D525FF8723F94BCE00A0470E /* UIViewController.swift in Sources */,

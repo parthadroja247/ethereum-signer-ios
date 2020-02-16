@@ -11,11 +11,23 @@ import Web3
 
 final class EthereumClient {
     static let shared = EthereumClient()
-
+    let web3: Web3
     var ethereumPrivateKey: EthereumPrivateKey!
 
-    private lazy var web3: Web3 = {
+    private init() {
         var environment = EnvironmentConfiguration()
-        return Web3(rpcURL: environment.current.rinkbyEndpoint)
-    }()
+        web3 = Web3(rpcURL: environment.current.rinkbyEndpoint)
+    }
+
+    func getAddress() -> String {
+        let address = ethereumPrivateKey.address.hex(eip55: false)
+        return address
+    }
+
+    func fetchBalance() {
+        web3.eth.getBalance(address: ethereumPrivateKey.address, block: .latest) { response in
+            if let result = response.result {
+            } else {}
+        }
+    }
 }
