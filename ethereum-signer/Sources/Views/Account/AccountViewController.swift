@@ -16,10 +16,12 @@ class AccountViewController: UIViewController {
 
     @IBAction func signAction(_: UIButton) {
         contract.sign()
+        navigateToSignVerify(controllerMode: .sign)
     }
 
     @IBAction func verifyAction(_: UIButton) {
         contract.verify()
+        navigateToSignVerify(controllerMode: .verify)
     }
 
     private var contract: AccountContract!
@@ -68,5 +70,11 @@ class AccountViewController: UIViewController {
             let balanceString = "\(balance) Ether"
             self.balanceLabel.text = balanceString
         }
+    }
+
+    private func navigateToSignVerify(controllerMode: ControllerMode) {
+        let controller = SignVerifyViewController.instantiateFrom(storyboard: .main)
+        controller.mode = controllerMode
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
