@@ -20,26 +20,28 @@ class QRScannerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        configureQRReaderView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if captureSession?.isRunning == false {
-            captureSession.startRunning()
-        }
+        startCaptureSession()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        scannerView.layoutIfNeeded()
+        previewLayer.frame = scannerView.bounds
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        if captureSession?.isRunning == true {
-            captureSession.stopRunning()
-        }
+        stopCaptureSession()
     }
 
     private func configureView() {
         configureContract()
         configureNavigationBar()
+        configureQRReaderView()
     }
 
     private func configureContract() {
@@ -75,8 +77,8 @@ class QRScannerViewController: UIViewController {
             return
         }
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.frame = view.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
+        previewLayer.frame = scannerView.layer.bounds
         scannerView.layer.addSublayer(previewLayer)
         captureSession.startRunning()
     }
@@ -92,7 +94,57 @@ class QRScannerViewController: UIViewController {
     }
 
     private func found(code: String) {
-        print(code)
+        stopCaptureSession()
+        guard let messageData = Data(base64Encoded: code) else {
+            signatureInvalid()
+            return
+        }
+        do {
+            let customSignature = try JSONDecoder().decode(CustomSignature.self,
+                                                           from: messageData)
+            let result = contract.verify(message: message, signature: customSignature)
+            if result {
+                signatureValid()
+            } else {
+                signatureInvalid()
+            }
+        } catch {
+            signatureInvalid()
+        }
+    }
+
+    private func startCaptureSession() {
+        if captureSession?.isRunning == false {
+            captureSession.startRunning()
+        }
+    }
+
+    private func stopCaptureSession() {
+        if captureSession?.isRunning == true {
+            captureSession.stopRunning()
+        }
+    }
+
+    private func signatureInvalid() {
+        showAlert(title: Constants.Alert.oops,
+                  message: Constants.Alert.invalidSignature)
+    }
+
+    private func signatureValid() {
+        showAlert(title: Constants.Alert.success,
+                  message: Constants.Alert.validSignature)
+    }
+
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: Constants.Alert.okButton,
+                                     style: .default) { _ in
+            self.startCaptureSession()
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
 }
 

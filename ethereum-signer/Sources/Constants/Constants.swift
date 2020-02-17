@@ -28,4 +28,12 @@ struct Constants {
     struct Error {
         static let generic = "Something went wrong"
     }
+
+    struct Alert {
+        static let okButton = "OK"
+        static let success = "Success"
+        static let oops = "OOPS"
+        static let validSignature = "Signature is Valid"
+        static let invalidSignature = "Signature is Invalid"
+    }
 }

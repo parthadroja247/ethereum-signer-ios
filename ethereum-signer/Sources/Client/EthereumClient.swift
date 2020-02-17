@@ -48,4 +48,17 @@ final class EthereumClient {
             return nil
         }
     }
+
+    func verify(message: String, signature: CustomSignature) -> Bool {
+        do {
+            let publicKey = ethereumPrivateKey.publicKey
+            let result = try publicKey.verifySignature(message: message.makeBytes(),
+                                                       v: signature.vBytes,
+                                                       r: BigUInt(signature.rBytes),
+                                                       s: BigUInt(signature.sBytes))
+            return result
+        } catch {
+            return false
+        }
+    }
 }

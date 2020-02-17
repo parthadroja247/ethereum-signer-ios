@@ -9,5 +9,5 @@
 import Foundation
 
 protocol QRScannerContract {
-    func verify()
+    func verify(message: String, signature: CustomSignature) -> Bool
 }

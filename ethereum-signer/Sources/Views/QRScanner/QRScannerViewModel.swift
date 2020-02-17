@@ -9,5 +9,7 @@
 import Foundation
 
 struct QRScannerViewModel: QRScannerContract {
-    func verify() {}
+    func verify(message: String, signature: CustomSignature) -> Bool {
+        return EthereumClient.shared.verify(message: message, signature: signature)
+    }
 }

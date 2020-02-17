@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E9A8D8C4EC210309303C29F /* Pods_ethereum_signerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE06FC5F0350A7DBE75909C /* Pods_ethereum_signerTests.framework */; };
-		3F8363C244856E4F11D36147 /* Pods_ethereum_signer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */; };
-		A30499087B91B1274756E7EB /* Pods_ethereum_signer_ethereum_signerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554FF72705B8E9BB1A109FEF /* Pods_ethereum_signer_ethereum_signerUITests.framework */; };
+		256768C105861C28FE449B61 /* libPods-ethereum-signerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6117873B503CD49B9D48B5A7 /* libPods-ethereum-signerTests.a */; };
+		911E522D0DE4974C830745B6 /* libPods-ethereum-signer-ethereum-signerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D41C3FE01A821F3B8967C69 /* libPods-ethereum-signer-ethereum-signerUITests.a */; };
 		D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */; };
 		D5021F2323F7FE7900DB2C4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */; };
 		D5021F2523F7FE7900DB2C4B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2423F7FE7900DB2C4B /* StartViewController.swift */; };
@@ -42,6 +41,7 @@
 		D5D3122F23FAF81700EAE02C /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3122E23FAF81700EAE02C /* QRScannerViewController.swift */; };
 		D5D3123123FAFBEA00EAE02C /* QRScannerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3123023FAFBEA00EAE02C /* QRScannerContract.swift */; };
 		D5D3123323FAFBFE00EAE02C /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3123223FAFBFE00EAE02C /* QRScannerViewModel.swift */; };
+		E459BCDDACA969BFB9BD98BD /* libPods-ethereum-signer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0459376B76E2ADD4DF15F6 /* libPods-ethereum-signer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +65,11 @@
 		22D874946C1F52C3644C4E06 /* Pods-ethereum-signer.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.uat.xcconfig"; sourceTree = "<group>"; };
 		24B9BBA73F118E4DA91BA580 /* Pods-ethereum-signer.sit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.sit.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.sit.xcconfig"; sourceTree = "<group>"; };
 		30B6073D35840E9BCC8FE650 /* Pods-ethereum-signer.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.production.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.production.xcconfig"; sourceTree = "<group>"; };
-		554FF72705B8E9BB1A109FEF /* Pods_ethereum_signer_ethereum_signerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signer_ethereum_signerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0459376B76E2ADD4DF15F6 /* libPods-ethereum-signer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ethereum-signer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D41C3FE01A821F3B8967C69 /* libPods-ethereum-signer-ethereum-signerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ethereum-signer-ethereum-signerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6117873B503CD49B9D48B5A7 /* libPods-ethereum-signerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ethereum-signerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F0A25C0BFC77003FCEE308 /* Pods-ethereum-signerTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.dev.xcconfig"; sourceTree = "<group>"; };
 		732DB71BC4A471AB4A69F76B /* Pods-ethereum-signer-ethereum-signerUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer-ethereum-signerUITests.production.xcconfig"; path = "Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests.production.xcconfig"; sourceTree = "<group>"; };
-		7AE06FC5F0350A7DBE75909C /* Pods_ethereum_signerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43203995A22B8AE9BDA0DC2 /* Pods-ethereum-signer-ethereum-signerUITests.sit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer-ethereum-signerUITests.sit.xcconfig"; path = "Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests.sit.xcconfig"; sourceTree = "<group>"; };
 		BA29F970BBBDBCB934DD82F0 /* Pods-ethereum-signer-ethereum-signerUITests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer-ethereum-signerUITests.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests.dev.xcconfig"; sourceTree = "<group>"; };
 		BFB8A36FBF72AF3ED0528386 /* Pods-ethereum-signerTests.sit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.sit.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.sit.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		D5D3122E23FAF81700EAE02C /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		D5D3123023FAFBEA00EAE02C /* QRScannerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerContract.swift; sourceTree = "<group>"; };
 		D5D3123223FAFBFE00EAE02C /* QRScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewModel.swift; sourceTree = "<group>"; };
-		DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0985B6DAA1DDE8B0FB4C7D9 /* Pods-ethereum-signerTests.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.uat.xcconfig"; sourceTree = "<group>"; };
 		EDAEE05F0BAA3728D4B56366 /* Pods-ethereum-signer.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.dev.xcconfig"; sourceTree = "<group>"; };
 		F7DA8DFF33C484FE1F619720 /* Pods-ethereum-signerTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.production.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.production.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8363C244856E4F11D36147 /* Pods_ethereum_signer.framework in Frameworks */,
+				E459BCDDACA969BFB9BD98BD /* libPods-ethereum-signer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9A8D8C4EC210309303C29F /* Pods_ethereum_signerTests.framework in Frameworks */,
+				256768C105861C28FE449B61 /* libPods-ethereum-signerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30499087B91B1274756E7EB /* Pods_ethereum_signer_ethereum_signerUITests.framework in Frameworks */,
+				911E522D0DE4974C830745B6 /* libPods-ethereum-signer-ethereum-signerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +148,9 @@
 		276FE52120D855A5D920FE36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */,
-				554FF72705B8E9BB1A109FEF /* Pods_ethereum_signer_ethereum_signerUITests.framework */,
-				7AE06FC5F0350A7DBE75909C /* Pods_ethereum_signerTests.framework */,
+				5C0459376B76E2ADD4DF15F6 /* libPods-ethereum-signer.a */,
+				5D41C3FE01A821F3B8967C69 /* libPods-ethereum-signer-ethereum-signerUITests.a */,
+				6117873B503CD49B9D48B5A7 /* libPods-ethereum-signerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -392,7 +392,6 @@
 				D5021F1A23F7FE7900DB2C4B /* Frameworks */,
 				D5021F1B23F7FE7900DB2C4B /* Resources */,
 				D5021F6223F82FB100DB2C4B /* Swift Lint Run Script */,
-				E628AF53353982F9A2DBD09E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -430,7 +429,6 @@
 				D5021F3A23F7FE7A00DB2C4B /* Sources */,
 				D5021F3B23F7FE7A00DB2C4B /* Frameworks */,
 				D5021F3C23F7FE7A00DB2C4B /* Resources */,
-				E5E511B76833DB16415B5C6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -596,40 +594,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-		E5E511B76833DB16415B5C6E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E628AF53353982F9A2DBD09E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
