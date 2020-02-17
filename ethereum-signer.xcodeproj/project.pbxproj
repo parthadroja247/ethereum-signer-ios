@@ -29,6 +29,9 @@
 		D525FF9223F9665400A0470E /* SetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF9123F9665400A0470E /* SetupViewModel.swift */; };
 		D552E5DF23FADF0E005D8C0D /* CustomSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552E5DE23FADF0E005D8C0D /* CustomSignature.swift */; };
 		D552E5E123FADF47005D8C0D /* EthereumQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552E5E023FADF47005D8C0D /* EthereumQuantity.swift */; };
+		D552E5E423FAE050005D8C0D /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552E5E323FAE050005D8C0D /* SignatureViewController.swift */; };
+		D552E5E623FAE315005D8C0D /* MessageSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552E5E523FAE315005D8C0D /* MessageSignature.swift */; };
+		D552E5E823FAE578005D8C0D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552E5E723FAE578005D8C0D /* String.swift */; };
 		D55A5AD223F9797F00B34A2C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5AD123F9797F00B34A2C /* AccountViewController.swift */; };
 		D55A5AD423F979C500B34A2C /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5AD323F979C500B34A2C /* AccountViewModel.swift */; };
 		D55A5AD623F979D700B34A2C /* AccountContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5AD523F979D700B34A2C /* AccountContract.swift */; };
@@ -92,6 +95,9 @@
 		D525FF9123F9665400A0470E /* SetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewModel.swift; sourceTree = "<group>"; };
 		D552E5DE23FADF0E005D8C0D /* CustomSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSignature.swift; sourceTree = "<group>"; };
 		D552E5E023FADF47005D8C0D /* EthereumQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumQuantity.swift; sourceTree = "<group>"; };
+		D552E5E323FAE050005D8C0D /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		D552E5E523FAE315005D8C0D /* MessageSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSignature.swift; sourceTree = "<group>"; };
+		D552E5E723FAE578005D8C0D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		D55A5AD123F9797F00B34A2C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		D55A5AD323F979C500B34A2C /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		D55A5AD523F979D700B34A2C /* AccountContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountContract.swift; sourceTree = "<group>"; };
@@ -236,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				D525FF8823F9541400A0470E /* Constants */,
+				D552E5DD23FADEF5005D8C0D /* Model */,
 				D525FF8B23F95DE200A0470E /* Client */,
 				D525FF8223F94B4600A0470E /* Utils */,
 				D5021F5523F800B800DB2C4B /* Views */,
@@ -260,6 +267,7 @@
 				D525FF8E23F9653600A0470E /* Setup */,
 				D55A5AD023F9794E00B34A2C /* Account */,
 				D55A5AD923F9B60B00B34A2C /* SignVerify */,
+				D552E5E223FAE037005D8C0D /* Signature */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +287,7 @@
 				D525FF8623F94BCE00A0470E /* UIViewController.swift */,
 				D552E5E023FADF47005D8C0D /* EthereumQuantity.swift */,
 				D55A5AD723F98CAD00B34A2C /* Error.swift */,
+				D552E5E723FAE578005D8C0D /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -294,7 +303,6 @@
 		D525FF8B23F95DE200A0470E /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				D552E5DD23FADEF5005D8C0D /* Model */,
 				D525FF8C23F95E0400A0470E /* EthereumClient.swift */,
 			);
 			path = Client;
@@ -322,8 +330,17 @@
 			isa = PBXGroup;
 			children = (
 				D552E5DE23FADF0E005D8C0D /* CustomSignature.swift */,
+				D552E5E523FAE315005D8C0D /* MessageSignature.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D552E5E223FAE037005D8C0D /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				D552E5E323FAE050005D8C0D /* SignatureViewController.swift */,
+			);
+			path = Signature;
 			sourceTree = "<group>";
 		};
 		D55A5AD023F9794E00B34A2C /* Account */ = {
@@ -609,6 +626,8 @@
 				D525FF8A23F9544800A0470E /* Constants.swift in Sources */,
 				D55A5AD223F9797F00B34A2C /* AccountViewController.swift in Sources */,
 				D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */,
+				D552E5E423FAE050005D8C0D /* SignatureViewController.swift in Sources */,
+				D552E5E823FAE578005D8C0D /* String.swift in Sources */,
 				D525FF8D23F95E0400A0470E /* EthereumClient.swift in Sources */,
 				D552E5E123FADF47005D8C0D /* EthereumQuantity.swift in Sources */,
 				D525FF9223F9665400A0470E /* SetupViewModel.swift in Sources */,
@@ -622,6 +641,7 @@
 				D525FF8123F94A7600A0470E /* SetupViewController.swift in Sources */,
 				D525FF8723F94BCE00A0470E /* UIViewController.swift in Sources */,
 				D55A5ADF23F9BE8000B34A2C /* SignVerifyViewModel.swift in Sources */,
+				D552E5E623FAE315005D8C0D /* MessageSignature.swift in Sources */,
 				D55A5ADD23F9BE5B00B34A2C /* SignVerifyContract.swift in Sources */,
 				D5021F5923F806A200DB2C4B /* Environment.swift in Sources */,
 				D525FF9023F9655E00A0470E /* SetupContract.swift in Sources */,

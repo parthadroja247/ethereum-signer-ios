@@ -14,7 +14,7 @@ enum EthereumError: Error {
 
 extension EthereumError: CustomNSError {
     public static var errorDomain: String {
-        return "Something went wrong"
+        return Constants.Error.generic
     }
 
     public var errorCode: Int {

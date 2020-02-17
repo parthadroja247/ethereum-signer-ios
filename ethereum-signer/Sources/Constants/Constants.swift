@@ -14,6 +14,7 @@ struct Constants {
         static let account = "Account"
         static let sign = "Signing"
         static let verify = "Verification"
+        static let signature = "Signature"
     }
 
     struct Placeholder {
@@ -21,5 +22,9 @@ struct Constants {
         static let address = "Address"
         static let balance = "Balance"
         static let yourMessage = "Your message"
+    }
+
+    struct Error {
+        static let generic = "Something went wrong"
     }
 }

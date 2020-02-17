@@ -80,13 +80,17 @@ class SignVerifyViewController: UIViewController {
             guard result.0 else {
                 return
             }
-            signingSuccess(signedMessage: result.1)
+            let messageSignature = MessageSignature(message: message,
+                                                    signature: result.1)
+            signingSuccess(signedMessage: messageSignature)
         case .verify:
             contract.verify()
         }
     }
 
-    private func signingSuccess(signedMessage: String) {
-        print(signedMessage)
+    private func signingSuccess(signedMessage: MessageSignature) {
+        let signatureController = SignatureViewController.instantiateFrom(storyboard: .main)
+        signatureController.signedMessage = signedMessage
+        navigationController?.pushViewController(signatureController, animated: true)
     }
 }
