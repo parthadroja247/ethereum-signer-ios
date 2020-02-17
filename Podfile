@@ -6,7 +6,7 @@ target 'ethereum-signer' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'SwiftLint'
-  pod 'Web3', '~> 0.4'
+  pod 'Web3', :git => 'https://github.com/parthadroja247/Web3.swift.git', :commit => 'd58c96da5ed54848bd306c40a458603ae10313eb'
 
   # Pods for ethereum-signer
 
