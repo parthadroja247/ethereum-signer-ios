@@ -39,6 +39,9 @@
 		D55A5ADB23F9B68100B34A2C /* SignVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5ADA23F9B68100B34A2C /* SignVerifyViewController.swift */; };
 		D55A5ADD23F9BE5B00B34A2C /* SignVerifyContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5ADC23F9BE5B00B34A2C /* SignVerifyContract.swift */; };
 		D55A5ADF23F9BE8000B34A2C /* SignVerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A5ADE23F9BE8000B34A2C /* SignVerifyViewModel.swift */; };
+		D5D3122F23FAF81700EAE02C /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3122E23FAF81700EAE02C /* QRScannerViewController.swift */; };
+		D5D3123123FAFBEA00EAE02C /* QRScannerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3123023FAFBEA00EAE02C /* QRScannerContract.swift */; };
+		D5D3123323FAFBFE00EAE02C /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3123223FAFBFE00EAE02C /* QRScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,9 @@
 		D55A5ADA23F9B68100B34A2C /* SignVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVerifyViewController.swift; sourceTree = "<group>"; };
 		D55A5ADC23F9BE5B00B34A2C /* SignVerifyContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVerifyContract.swift; sourceTree = "<group>"; };
 		D55A5ADE23F9BE8000B34A2C /* SignVerifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVerifyViewModel.swift; sourceTree = "<group>"; };
+		D5D3122E23FAF81700EAE02C /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		D5D3123023FAFBEA00EAE02C /* QRScannerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerContract.swift; sourceTree = "<group>"; };
+		D5D3123223FAFBFE00EAE02C /* QRScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewModel.swift; sourceTree = "<group>"; };
 		DB62FE603D2FAF73682EBF2D /* Pods_ethereum_signer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethereum_signer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0985B6DAA1DDE8B0FB4C7D9 /* Pods-ethereum-signerTests.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.uat.xcconfig"; sourceTree = "<group>"; };
 		EDAEE05F0BAA3728D4B56366 /* Pods-ethereum-signer.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.dev.xcconfig"; sourceTree = "<group>"; };
@@ -268,6 +274,7 @@
 				D55A5AD023F9794E00B34A2C /* Account */,
 				D55A5AD923F9B60B00B34A2C /* SignVerify */,
 				D552E5E223FAE037005D8C0D /* Signature */,
+				D5D3122D23FAF7DD00EAE02C /* QRScanner */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +368,16 @@
 				D55A5ADA23F9B68100B34A2C /* SignVerifyViewController.swift */,
 			);
 			path = SignVerify;
+			sourceTree = "<group>";
+		};
+		D5D3122D23FAF7DD00EAE02C /* QRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				D5D3123023FAFBEA00EAE02C /* QRScannerContract.swift */,
+				D5D3123223FAFBFE00EAE02C /* QRScannerViewModel.swift */,
+				D5D3122E23FAF81700EAE02C /* QRScannerViewController.swift */,
+			);
+			path = QRScanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,6 +643,7 @@
 				D525FF8A23F9544800A0470E /* Constants.swift in Sources */,
 				D55A5AD223F9797F00B34A2C /* AccountViewController.swift in Sources */,
 				D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */,
+				D5D3122F23FAF81700EAE02C /* QRScannerViewController.swift in Sources */,
 				D552E5E423FAE050005D8C0D /* SignatureViewController.swift in Sources */,
 				D552E5E823FAE578005D8C0D /* String.swift in Sources */,
 				D525FF8D23F95E0400A0470E /* EthereumClient.swift in Sources */,
@@ -634,7 +652,9 @@
 				D55A5ADB23F9B68100B34A2C /* SignVerifyViewController.swift in Sources */,
 				D5021F5723F803ED00DB2C4B /* EnvironmentConfiguration.swift in Sources */,
 				D525FF8523F94B9400A0470E /* Storyboard.swift in Sources */,
+				D5D3123323FAFBFE00EAE02C /* QRScannerViewModel.swift in Sources */,
 				D55A5AD623F979D700B34A2C /* AccountContract.swift in Sources */,
+				D5D3123123FAFBEA00EAE02C /* QRScannerContract.swift in Sources */,
 				D55A5AD423F979C500B34A2C /* AccountViewModel.swift in Sources */,
 				D5021F2323F7FE7900DB2C4B /* SceneDelegate.swift in Sources */,
 				D552E5DF23FADF0E005D8C0D /* CustomSignature.swift in Sources */,

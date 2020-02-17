@@ -284,6 +284,48 @@
             </objects>
             <point key="canvasLocation" x="3671" y="830"/>
         </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="i9x-8Z-iY4">
+            <objects>
+                <viewController storyboardIdentifier="QRScannerViewController" id="Z6G-Gg-8Oe" customClass="QRScannerViewController" customModule="ethereum_signer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ink-8j-3sB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-2Z-nSj" userLabel="View-Content">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4S-Z0-KHr" userLabel="QRScannerView">
+                                        <rect key="frame" x="24" y="24" width="366" height="770"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E4S-Z0-KHr" secondAttribute="trailing" constant="24" id="Z7f-x3-Nzb"/>
+                                    <constraint firstAttribute="bottom" secondItem="E4S-Z0-KHr" secondAttribute="bottom" constant="24" id="ZXa-2S-i2f"/>
+                                    <constraint firstItem="E4S-Z0-KHr" firstAttribute="leading" secondItem="Deb-2Z-nSj" secondAttribute="leading" constant="24" id="fCM-X1-mG7"/>
+                                    <constraint firstItem="E4S-Z0-KHr" firstAttribute="top" secondItem="Deb-2Z-nSj" secondAttribute="top" constant="24" id="fP6-A5-Z3T"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TLX-Db-6BZ" firstAttribute="bottom" secondItem="Deb-2Z-nSj" secondAttribute="bottom" id="DbD-x4-fNj"/>
+                            <constraint firstItem="Deb-2Z-nSj" firstAttribute="top" secondItem="TLX-Db-6BZ" secondAttribute="top" id="FQ6-DM-bxr"/>
+                            <constraint firstItem="TLX-Db-6BZ" firstAttribute="trailing" secondItem="Deb-2Z-nSj" secondAttribute="trailing" id="VJq-jP-Ahz"/>
+                            <constraint firstItem="Deb-2Z-nSj" firstAttribute="leading" secondItem="TLX-Db-6BZ" secondAttribute="leading" id="mHN-lL-Nxv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TLX-Db-6BZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="scannerView" destination="E4S-Z0-KHr" id="Ffi-GC-IZn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wl8-KL-UzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4510" y="830"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rOt-rh-LXE">
             <objects>

@@ -15,6 +15,7 @@ struct Constants {
         static let sign = "Signing"
         static let verify = "Verification"
         static let signature = "Signature"
+        static let qrScanner = "QR Code Scanner"
     }
 
     struct Placeholder {

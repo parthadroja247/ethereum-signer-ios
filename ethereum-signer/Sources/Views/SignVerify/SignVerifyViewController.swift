@@ -85,6 +85,7 @@ class SignVerifyViewController: UIViewController {
             signingSuccess(signedMessage: messageSignature)
         case .verify:
             contract.verify()
+            verifyMessage(message: message)
         }
     }
 
@@ -92,5 +93,11 @@ class SignVerifyViewController: UIViewController {
         let signatureController = SignatureViewController.instantiateFrom(storyboard: .main)
         signatureController.signedMessage = signedMessage
         navigationController?.pushViewController(signatureController, animated: true)
+    }
+
+    private func verifyMessage(message: String) {
+        let qrController = QRScannerViewController.instantiateFrom(storyboard: .main)
+        qrController.message = message
+        navigationController?.pushViewController(qrController, animated: true)
     }
 }
