@@ -35,11 +35,30 @@ final class EthereumClient {
             }
         }
     }
-}
 
-extension EthereumQuantity {
-    func toDouble() -> Double {
-        let doubleValue = Double(quantity) / pow(10, 18)
-        return doubleValue
+    func sign(message: String) -> String? {
+        do {
+            let signature = try ethereumPrivateKey.sign(message: message.makeBytes())
+            let customSignature = CustomSignature(vBytes: signature.v,
+                                                  rBytes: signature.r,
+                                                  sBytes: signature.s)
+            let encodedString = try JSONEncoder().encode(customSignature).base64EncodedString()
+            return encodedString
+        } catch {
+            return nil
+        }
+    }
+
+    func verify(message: String, signature: CustomSignature) -> Bool {
+        do {
+            let publicKey = ethereumPrivateKey.publicKey
+            let result = try publicKey.verifySignature(message: message.makeBytes(),
+                                                       v: signature.vBytes,
+                                                       r: BigUInt(signature.rBytes),
+                                                       s: BigUInt(signature.sBytes))
+            return result
+        } catch {
+            return false
+        }
     }
 }

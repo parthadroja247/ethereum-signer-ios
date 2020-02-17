@@ -15,7 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - SwiftLint
-  - Web3 (~> 0.4)
+  - Web3 (from `https://github.com/parthadroja247/Web3.swift.git`, commit `d58c96da5ed54848bd306c40a458603ae10313eb`)
 
 SPEC REPOS:
   trunk:
@@ -23,7 +23,16 @@ SPEC REPOS:
     - CryptoSwift
     - secp256k1.swift
     - SwiftLint
-    - Web3
+
+EXTERNAL SOURCES:
+  Web3:
+    :commit: d58c96da5ed54848bd306c40a458603ae10313eb
+    :git: https://github.com/parthadroja247/Web3.swift.git
+
+CHECKOUT OPTIONS:
+  Web3:
+    :commit: d58c96da5ed54848bd306c40a458603ae10313eb
+    :git: https://github.com/parthadroja247/Web3.swift.git
 
 SPEC CHECKSUMS:
   BigInt: 2aad1a9942dc932ec8b84290d2c564a3d76f97ab
@@ -32,6 +41,6 @@ SPEC CHECKSUMS:
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
   Web3: 7b2c30f98f24cc290bc671ab525d7a30a2afbc73
 
-PODFILE CHECKSUM: e21e8722c1971df397f1fd63e62695c865f3ce1c
+PODFILE CHECKSUM: 8da74b580fad14f009b58667239b240d90f17ee4
 
 COCOAPODS: 1.8.4

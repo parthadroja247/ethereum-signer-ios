@@ -48,7 +48,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyd-1F-Lta">
                                         <rect key="frame" x="24" y="32" width="366" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -178,6 +178,153 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rir-JL-ucf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1913" y="830"/>
+        </scene>
+        <!--Sign Verify View Controller-->
+        <scene sceneID="t1Y-NI-Ojz">
+            <objects>
+                <viewController storyboardIdentifier="SignVerifyViewController" id="shT-L1-Q42" customClass="SignVerifyViewController" customModule="ethereum_signer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aow-ZA-2pO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUW-zc-chp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M73-4Q-1II">
+                                        <rect key="frame" x="24" y="32" width="366" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jca-tx-ANG">
+                                        <rect key="frame" x="184" y="98" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="signVerifyAction:" destination="shT-L1-Q42" eventType="touchUpInside" id="WcF-Mx-rbu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Jca-tx-ANG" firstAttribute="centerX" secondItem="uUW-zc-chp" secondAttribute="centerX" id="7ql-Nt-GIW"/>
+                                    <constraint firstAttribute="trailing" secondItem="M73-4Q-1II" secondAttribute="trailing" constant="24" id="GOF-lo-4hj"/>
+                                    <constraint firstItem="M73-4Q-1II" firstAttribute="top" secondItem="uUW-zc-chp" secondAttribute="top" constant="32" id="KhJ-ha-5m7"/>
+                                    <constraint firstItem="Jca-tx-ANG" firstAttribute="top" secondItem="M73-4Q-1II" secondAttribute="bottom" constant="32" id="vkt-kw-IwB"/>
+                                    <constraint firstItem="M73-4Q-1II" firstAttribute="leading" secondItem="uUW-zc-chp" secondAttribute="leading" constant="24" id="vw8-7t-gio"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uUW-zc-chp" firstAttribute="leading" secondItem="MXb-YS-HWK" secondAttribute="leading" id="5kD-h4-dSS"/>
+                            <constraint firstItem="uUW-zc-chp" firstAttribute="top" secondItem="MXb-YS-HWK" secondAttribute="top" id="5wO-jF-dAM"/>
+                            <constraint firstItem="MXb-YS-HWK" firstAttribute="bottom" secondItem="uUW-zc-chp" secondAttribute="bottom" id="Vng-Uv-Wif"/>
+                            <constraint firstItem="MXb-YS-HWK" firstAttribute="trailing" secondItem="uUW-zc-chp" secondAttribute="trailing" id="jr5-wj-H5B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MXb-YS-HWK"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextField" destination="M73-4Q-1II" id="iGp-Iv-7d9"/>
+                        <outlet property="signVerifyButton" destination="Jca-tx-ANG" id="9Vy-zS-gfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97i-m6-xIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2804" y="830"/>
+        </scene>
+        <!--Signature View Controller-->
+        <scene sceneID="30h-JX-tzt">
+            <objects>
+                <viewController storyboardIdentifier="SignatureViewController" id="cHZ-rv-GmX" customClass="SignatureViewController" customModule="ethereum_signer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1cd-in-qqu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nds-Rs-bb5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOb-Xd-RaQ">
+                                        <rect key="frame" x="24" y="32" width="366" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UMf-FN-UAT">
+                                        <rect key="frame" x="82" y="284" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="Gqg-1d-vBD"/>
+                                            <constraint firstAttribute="width" constant="250" id="ffK-Hf-D2M"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="UMf-FN-UAT" firstAttribute="centerX" secondItem="Nds-Rs-bb5" secondAttribute="centerX" id="0Qo-cH-4PU"/>
+                                    <constraint firstAttribute="trailing" secondItem="AOb-Xd-RaQ" secondAttribute="trailing" constant="24" id="6oy-Wo-msf"/>
+                                    <constraint firstItem="AOb-Xd-RaQ" firstAttribute="top" secondItem="Nds-Rs-bb5" secondAttribute="top" constant="32" id="IcM-0S-yGg"/>
+                                    <constraint firstItem="UMf-FN-UAT" firstAttribute="centerY" secondItem="Nds-Rs-bb5" secondAttribute="centerY" id="hL5-ez-pOR"/>
+                                    <constraint firstItem="AOb-Xd-RaQ" firstAttribute="leading" secondItem="Nds-Rs-bb5" secondAttribute="leading" constant="24" id="jh3-ww-E1p"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3jL-Ys-0ON" firstAttribute="trailing" secondItem="Nds-Rs-bb5" secondAttribute="trailing" id="GyL-1A-EhM"/>
+                            <constraint firstItem="Nds-Rs-bb5" firstAttribute="leading" secondItem="3jL-Ys-0ON" secondAttribute="leading" id="Rtq-uL-OJF"/>
+                            <constraint firstItem="3jL-Ys-0ON" firstAttribute="bottom" secondItem="Nds-Rs-bb5" secondAttribute="bottom" id="Wrs-Eq-HMP"/>
+                            <constraint firstItem="Nds-Rs-bb5" firstAttribute="top" secondItem="3jL-Ys-0ON" secondAttribute="top" id="ise-PZ-9YQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3jL-Ys-0ON"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="AOb-Xd-RaQ" id="efc-oD-lFt"/>
+                        <outlet property="qrCodeImageView" destination="UMf-FN-UAT" id="N58-hj-ETP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBt-7v-W9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3671" y="830"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="i9x-8Z-iY4">
+            <objects>
+                <viewController storyboardIdentifier="QRScannerViewController" id="Z6G-Gg-8Oe" customClass="QRScannerViewController" customModule="ethereum_signer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ink-8j-3sB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-2Z-nSj" userLabel="View-Content">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4S-Z0-KHr" userLabel="QRScannerView">
+                                        <rect key="frame" x="24" y="24" width="366" height="770"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E4S-Z0-KHr" secondAttribute="trailing" constant="24" id="Z7f-x3-Nzb"/>
+                                    <constraint firstAttribute="bottom" secondItem="E4S-Z0-KHr" secondAttribute="bottom" constant="24" id="ZXa-2S-i2f"/>
+                                    <constraint firstItem="E4S-Z0-KHr" firstAttribute="leading" secondItem="Deb-2Z-nSj" secondAttribute="leading" constant="24" id="fCM-X1-mG7"/>
+                                    <constraint firstItem="E4S-Z0-KHr" firstAttribute="top" secondItem="Deb-2Z-nSj" secondAttribute="top" constant="24" id="fP6-A5-Z3T"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TLX-Db-6BZ" firstAttribute="bottom" secondItem="Deb-2Z-nSj" secondAttribute="bottom" id="DbD-x4-fNj"/>
+                            <constraint firstItem="Deb-2Z-nSj" firstAttribute="top" secondItem="TLX-Db-6BZ" secondAttribute="top" id="FQ6-DM-bxr"/>
+                            <constraint firstItem="TLX-Db-6BZ" firstAttribute="trailing" secondItem="Deb-2Z-nSj" secondAttribute="trailing" id="VJq-jP-Ahz"/>
+                            <constraint firstItem="Deb-2Z-nSj" firstAttribute="leading" secondItem="TLX-Db-6BZ" secondAttribute="leading" id="mHN-lL-Nxv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TLX-Db-6BZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="scannerView" destination="E4S-Z0-KHr" id="Ffi-GC-IZn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wl8-KL-UzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4510" y="830"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rOt-rh-LXE">
