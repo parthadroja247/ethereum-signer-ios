@@ -18,8 +18,4 @@ struct AccountViewModel: AccountContract {
             completion(result)
         }
     }
-
-    func sign() {}
-
-    func verify() {}
 }

@@ -45,7 +45,6 @@ class SetupViewController: UIViewController {
         privateKeyTextField.backgroundColor = .systemGray6
         privateKeyTextField.delegate = self
         privateKeyTextField.autocorrectionType = .no
-        privateKeyTextField.text = "9857D8DCDE92863801FD47DD1CBEF610194748C78A12D99D5D97F478CE3C5271"
     }
 
     private func privateKeyEntered(key: String) {

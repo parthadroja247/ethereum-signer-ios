@@ -16,6 +16,4 @@ struct SignVerifyViewModel: SignVerifyContract {
         }
         return (true, message)
     }
-
-    func verify() {}
 }

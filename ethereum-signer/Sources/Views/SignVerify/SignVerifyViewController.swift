@@ -84,7 +84,6 @@ class SignVerifyViewController: UIViewController {
                                                     signature: result.1)
             signingSuccess(signedMessage: messageSignature)
         case .verify:
-            contract.verify()
             verifyMessage(message: message)
         }
     }

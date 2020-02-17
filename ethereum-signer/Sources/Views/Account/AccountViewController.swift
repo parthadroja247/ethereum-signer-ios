@@ -15,12 +15,10 @@ class AccountViewController: UIViewController {
     @IBOutlet var balanceLabel: UILabel!
 
     @IBAction func signAction(_: UIButton) {
-        contract.sign()
         navigateToSignVerify(controllerMode: .sign)
     }
 
     @IBAction func verifyAction(_: UIButton) {
-        contract.verify()
         navigateToSignVerify(controllerMode: .verify)
     }
 
