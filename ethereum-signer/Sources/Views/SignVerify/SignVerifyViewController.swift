@@ -26,7 +26,13 @@ class SignVerifyViewController: UIViewController {
     @IBOutlet var messageTextField: UITextField!
     @IBOutlet var signVerifyButton: UIButton!
 
-    @IBAction func signVerifyAction(_: UIButton) {}
+    @IBAction func signVerifyAction(_: UIButton) {
+        guard let text = messageTextField.text, !text.isEmpty else {
+            // No text entered
+            return
+        }
+        messageEntered(message: text)
+    }
 
     private var contract: SignVerifyContract!
     var mode: ControllerMode = .sign
@@ -60,13 +66,27 @@ class SignVerifyViewController: UIViewController {
         messageTextField.placeholder = Constants.Placeholder.yourMessage
         messageTextField.becomeFirstResponder()
         messageTextField.backgroundColor = .systemGray6
-        messageTextField.delegate = self
         messageTextField.autocorrectionType = .no
     }
 
     private func configureUI() {
         signVerifyButton.setTitle(mode.actionTitle, for: .normal)
     }
-}
 
-extension SignVerifyViewController: UITextFieldDelegate {}
+    private func messageEntered(message: String) {
+        switch mode {
+        case .sign:
+            let result = contract.sign(message: message)
+            guard result.0 else {
+                return
+            }
+            signingSuccess(signedMessage: result.1)
+        case .verify:
+            contract.verify()
+        }
+    }
+
+    private func signingSuccess(signedMessage: String) {
+        print(signedMessage)
+    }
+}

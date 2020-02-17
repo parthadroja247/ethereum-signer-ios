@@ -8,4 +8,14 @@
 
 import Foundation
 
-struct SignVerifyViewModel: SignVerifyContract {}
+struct SignVerifyViewModel: SignVerifyContract {
+    func sign(message: String) -> (Bool, String) {
+        let signedMessage = EthereumClient.shared.sign(message: message)
+        guard let message = signedMessage else {
+            return (false, "")
+        }
+        return (true, message)
+    }
+
+    func verify() {}
+}

@@ -8,4 +8,7 @@
 
 import Foundation
 
-protocol SignVerifyContract {}
+protocol SignVerifyContract {
+    func sign(message: String) -> (Bool, String)
+    func verify()
+}
