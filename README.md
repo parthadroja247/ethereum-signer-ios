@@ -2,6 +2,11 @@
 
 Ethereum Signer is iOS application. It's very simple to use app. It allows to sign and verify message based on Ethereum Private Key. Also, allows to find the ethereum balance.
 
+# Tips
+
+- Checkout the project from **develop** branch 
+- Install pods
+
 ## Features
 - View ethereum balance
 - Sign and verify message with private key
