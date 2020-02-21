@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		D5021F2823F7FE7900DB2C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2623F7FE7900DB2C4B /* Main.storyboard */; };
 		D5021F2A23F7FE7A00DB2C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2923F7FE7A00DB2C4B /* Assets.xcassets */; };
 		D5021F2D23F7FE7A00DB2C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5021F2B23F7FE7A00DB2C4B /* LaunchScreen.storyboard */; };
-		D5021F3823F7FE7A00DB2C4B /* EthereumSignerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F3723F7FE7A00DB2C4B /* EthereumSignerTests.swift */; };
 		D5021F4323F7FE7A00DB2C4B /* EthereumSignerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F4223F7FE7A00DB2C4B /* EthereumSignerUITests.swift */; };
 		D5021F5723F803ED00DB2C4B /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F5623F803ED00DB2C4B /* EnvironmentConfiguration.swift */; };
 		D5021F5923F806A200DB2C4B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F5823F806A200DB2C4B /* Environment.swift */; };
@@ -41,6 +40,7 @@
 		D5D3122F23FAF81700EAE02C /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3122E23FAF81700EAE02C /* QRScannerViewController.swift */; };
 		D5D3123123FAFBEA00EAE02C /* QRScannerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3123023FAFBEA00EAE02C /* QRScannerContract.swift */; };
 		D5D3123323FAFBFE00EAE02C /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D3123223FAFBFE00EAE02C /* QRScannerViewModel.swift */; };
+		D5EFE37D240048A9007C2AB8 /* SetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EFE37C240048A9007C2AB8 /* SetupTests.swift */; };
 		E459BCDDACA969BFB9BD98BD /* libPods-ethereum-signer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0459376B76E2ADD4DF15F6 /* libPods-ethereum-signer.a */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +83,6 @@
 		D5021F2C23F7FE7A00DB2C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5021F2E23F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5021F3323F7FE7A00DB2C4B /* ethereum-signerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ethereum-signerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5021F3723F7FE7A00DB2C4B /* EthereumSignerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumSignerTests.swift; sourceTree = "<group>"; };
 		D5021F3923F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5021F3E23F7FE7A00DB2C4B /* ethereum-signerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ethereum-signerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5021F4223F7FE7A00DB2C4B /* EthereumSignerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumSignerUITests.swift; sourceTree = "<group>"; };
@@ -112,6 +111,7 @@
 		D5D3122E23FAF81700EAE02C /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		D5D3123023FAFBEA00EAE02C /* QRScannerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerContract.swift; sourceTree = "<group>"; };
 		D5D3123223FAFBFE00EAE02C /* QRScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewModel.swift; sourceTree = "<group>"; };
+		D5EFE37C240048A9007C2AB8 /* SetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTests.swift; sourceTree = "<group>"; };
 		E0985B6DAA1DDE8B0FB4C7D9 /* Pods-ethereum-signerTests.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.uat.xcconfig"; sourceTree = "<group>"; };
 		EDAEE05F0BAA3728D4B56366 /* Pods-ethereum-signer.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer.dev.xcconfig"; path = "Target Support Files/Pods-ethereum-signer/Pods-ethereum-signer.dev.xcconfig"; sourceTree = "<group>"; };
 		F7DA8DFF33C484FE1F619720 /* Pods-ethereum-signerTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.production.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.production.xcconfig"; sourceTree = "<group>"; };
@@ -209,8 +209,8 @@
 		D5021F3623F7FE7A00DB2C4B /* ethereum-signerTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5021F3723F7FE7A00DB2C4B /* EthereumSignerTests.swift */,
 				D5021F3923F7FE7A00DB2C4B /* Info.plist */,
+				D5EFE37C240048A9007C2AB8 /* SetupTests.swift */,
 			);
 			path = "ethereum-signerTests";
 			sourceTree = "<group>";
@@ -636,7 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5021F3823F7FE7A00DB2C4B /* EthereumSignerTests.swift in Sources */,
+				D5EFE37D240048A9007C2AB8 /* SetupTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
