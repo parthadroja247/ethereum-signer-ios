@@ -24,4 +24,17 @@ extension String {
 
         return nil
     }
+
+    func getCustomSignature() -> CustomSignature? {
+        guard let messageData = Data(base64Encoded: self) else {
+            return nil
+        }
+        do {
+            let customSignature = try JSONDecoder().decode(CustomSignature.self,
+                                                           from: messageData)
+            return customSignature
+        } catch {
+            return nil
+        }
+    }
 }
