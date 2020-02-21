@@ -19,6 +19,10 @@ final class EthereumClient {
         web3 = Web3(rpcURL: environment.current.rinkbyEndpoint)
     }
 
+    func reset() {
+        ethereumPrivateKey = nil
+    }
+
     func getAddress() -> String {
         let address = ethereumPrivateKey.address.hex(eip55: false)
         return address
