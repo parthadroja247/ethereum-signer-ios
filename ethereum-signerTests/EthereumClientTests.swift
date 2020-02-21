@@ -16,7 +16,7 @@ class EthereumClientTests: XCTestCase {
         static let getAccount = "getAccount"
         static let currentBalance = 18.75
         static let message = "Hello Ehter"
-        static let messsage2 = "Hello Parth"
+        static let message2 = "Hello Parth"
         // swiftlint:disable line_length
         static let signedMessage = "eyJyQnl0ZXMiOlsxNjIsNDYsNDAsMTI4LDMsMTA2LDI1MSw1MCwxMDIsMTI1LDE1NywxNiwxOSwxMjgsMTg5LDQ0LDE5MCwxMDgsMTEwLDE2MywxNDQsMTQ0LDEzMCwxNDQsMTE2LDE0MCwyMzYsMjMxLDk0LDIzMCwxOSwxNThdLCJ2Qnl0ZXMiOjEsInNCeXRlcyI6WzY4LDE5NCwxMjcsMTU2LDgxLDIxNSw3MCw1OCwxODMsNTUsMjUsNjgsMTI1LDEzNSwxNjQsMTg4LDE0NCwyMjQsMzUsMTAyLDEyMywzOCw2MSw3NiwyMCwxNDAsNjcsMTQ1LDE0OCwxNjMsMTk0LDE3N119"
         // swiftlint:enable line_length
@@ -27,7 +27,7 @@ class EthereumClientTests: XCTestCase {
     }
 
     override func tearDown() {
-        EthereumClient.shared.ethereumPrivateKey = nil
+        EthereumClient.shared.reset()
     }
 
     private func configureClient() {
@@ -53,7 +53,7 @@ class EthereumClientTests: XCTestCase {
                 XCTAssertEqual(balance, MockData.currentBalance)
                 expectation.fulfill()
             case .failure:
-                XCTFail()
+                XCTFail("Failed")
             }
         }
         waitForExpectations(timeout: 20, handler: nil)
@@ -76,7 +76,7 @@ class EthereumClientTests: XCTestCase {
     func testVerifyMessageInvalid() {
         let customSignature = MockData.signedMessage.getCustomSignature()
         XCTAssertNotNil(customSignature)
-        let result = EthereumClient.shared.verify(message: MockData.messsage2,
+        let result = EthereumClient.shared.verify(message: MockData.message2,
                                                   signature: customSignature!)
         XCTAssertFalse(result)
     }

@@ -10,6 +10,8 @@
 		256768C105861C28FE449B61 /* libPods-ethereum-signerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6117873B503CD49B9D48B5A7 /* libPods-ethereum-signerTests.a */; };
 		911E522D0DE4974C830745B6 /* libPods-ethereum-signer-ethereum-signerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D41C3FE01A821F3B8967C69 /* libPods-ethereum-signer-ethereum-signerUITests.a */; };
 		D50154D5240055AD00873B9D /* EthereumClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50154D4240055AD00873B9D /* EthereumClientTests.swift */; };
+		D50154D72400606700873B9D /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50154D62400606700873B9D /* AccountTests.swift */; };
+		D50154D92400618D00873B9D /* SignVerifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50154D82400618D00873B9D /* SignVerifyTests.swift */; };
 		D5021F2123F7FE7900DB2C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */; };
 		D5021F2323F7FE7900DB2C4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */; };
 		D5021F2523F7FE7900DB2C4B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F2423F7FE7900DB2C4B /* StartViewController.swift */; };
@@ -19,6 +21,7 @@
 		D5021F4323F7FE7A00DB2C4B /* EthereumSignerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F4223F7FE7A00DB2C4B /* EthereumSignerUITests.swift */; };
 		D5021F5723F803ED00DB2C4B /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F5623F803ED00DB2C4B /* EnvironmentConfiguration.swift */; };
 		D5021F5923F806A200DB2C4B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5021F5823F806A200DB2C4B /* Environment.swift */; };
+		D514EDD72400650200D1247C /* QRVerifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D514EDD62400650200D1247C /* QRVerifyTests.swift */; };
 		D525FF8123F94A7600A0470E /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8023F94A7600A0470E /* SetupViewController.swift */; };
 		D525FF8523F94B9400A0470E /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8423F94B9300A0470E /* Storyboard.swift */; };
 		D525FF8723F94BCE00A0470E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525FF8623F94BCE00A0470E /* UIViewController.swift */; };
@@ -76,6 +79,8 @@
 		BFB8A36FBF72AF3ED0528386 /* Pods-ethereum-signerTests.sit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signerTests.sit.xcconfig"; path = "Target Support Files/Pods-ethereum-signerTests/Pods-ethereum-signerTests.sit.xcconfig"; sourceTree = "<group>"; };
 		C41CC63A651FADEFF1AA72FF /* Pods-ethereum-signer-ethereum-signerUITests.uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethereum-signer-ethereum-signerUITests.uat.xcconfig"; path = "Target Support Files/Pods-ethereum-signer-ethereum-signerUITests/Pods-ethereum-signer-ethereum-signerUITests.uat.xcconfig"; sourceTree = "<group>"; };
 		D50154D4240055AD00873B9D /* EthereumClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumClientTests.swift; sourceTree = "<group>"; };
+		D50154D62400606700873B9D /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
+		D50154D82400618D00873B9D /* SignVerifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVerifyTests.swift; sourceTree = "<group>"; };
 		D5021F1D23F7FE7900DB2C4B /* ethereum-signer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ethereum-signer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5021F2023F7FE7900DB2C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5021F2223F7FE7900DB2C4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 		D5021F4423F7FE7A00DB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5021F5623F803ED00DB2C4B /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
 		D5021F5823F806A200DB2C4B /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D514EDD62400650200D1247C /* QRVerifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRVerifyTests.swift; sourceTree = "<group>"; };
 		D525FF8023F94A7600A0470E /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		D525FF8423F94B9300A0470E /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		D525FF8623F94BCE00A0470E /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -212,8 +218,11 @@
 			isa = PBXGroup;
 			children = (
 				D5021F3923F7FE7A00DB2C4B /* Info.plist */,
-				D5EFE37C240048A9007C2AB8 /* SetupTests.swift */,
 				D50154D4240055AD00873B9D /* EthereumClientTests.swift */,
+				D5EFE37C240048A9007C2AB8 /* SetupTests.swift */,
+				D50154D62400606700873B9D /* AccountTests.swift */,
+				D50154D82400618D00873B9D /* SignVerifyTests.swift */,
+				D514EDD62400650200D1247C /* QRVerifyTests.swift */,
 			);
 			path = "ethereum-signerTests";
 			sourceTree = "<group>";
@@ -640,6 +649,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5EFE37D240048A9007C2AB8 /* SetupTests.swift in Sources */,
+				D514EDD72400650200D1247C /* QRVerifyTests.swift in Sources */,
+				D50154D92400618D00873B9D /* SignVerifyTests.swift in Sources */,
+				D50154D72400606700873B9D /* AccountTests.swift in Sources */,
 				D50154D5240055AD00873B9D /* EthereumClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
