@@ -6,6 +6,7 @@ Ethereum Signer is iOS application. It's very simple to use app. It allows to si
 
 - Checkout the project from **develop** branch 
 - Install pods
+- Use **ethereum-signer-dev** schema and run the app
 
 ## Features
 - View ethereum balance
