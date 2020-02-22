@@ -30,7 +30,9 @@ class QRScannerViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scannerView.layoutIfNeeded()
-        previewLayer.frame = scannerView.bounds
+        if previewLayer != nil {
+            previewLayer.frame = scannerView.bounds
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
